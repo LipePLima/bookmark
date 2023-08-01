@@ -3,8 +3,13 @@ main {
     display: inline-block;
     text-align: center;
     padding: 34px 0 0 0;
+    margin-bottom: 7rem;
 
     height: 100%;
     width: 100%;
+  }
+
+  app-features {
+    text-align: center;
   }
 }
