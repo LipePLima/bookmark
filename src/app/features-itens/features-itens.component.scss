@@ -1,0 +1,42 @@
+@import url('../features/features.component.scss');;
+
+.itens__image {
+  position: relative;
+
+  .itens__img {
+    position: relative;
+    z-index: 2;
+    width: 85%
+  }
+
+  .itens__bottom {
+    z-index: 1;
+    position: absolute;
+    top: 38px;
+    left: 0;
+    border-bottom-right-radius: 100px;
+    height: 100%;
+    width: 80%;
+    background-color: #4D61D2;
+  }
+}
+
+.itens__content {
+  margin-top: 5rem;
+  padding: 0 2rem;
+
+  .content__title {
+    font-size: 22px;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+    line-height: 1.5rem;
+  }
+
+  .content__text {
+    margin: 1rem 0 8rem 0;
+
+    font-weight: 400;
+    color: hsl(229, 8%, 60%);
+    line-height: 1.4rem;
+  }
+}
