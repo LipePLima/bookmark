@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-download-cards',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./download-cards.component.scss']
 })
 export class DownloadCardsComponent {
-
+  @Input() cardInfo: {
+    imageSrc: string;
+    cardTitle: string;
+    cardText: string;
+    buttonText: string;
+  } | undefined;
 }

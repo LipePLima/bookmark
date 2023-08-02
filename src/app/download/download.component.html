@@ -3,5 +3,28 @@
   <p class="download__text">Temos mais navegadores no pipeline. Por favor, deixe-nos saber se você tem um favorito que você gostaria que priorizássemos</p>
 </section>
 <section class="download__cards">
-  <app-download-cards></app-download-cards>
+  <app-download-cards
+  [cardInfo]="{
+    imageSrc: '../../assets/images/logo-chrome.svg',
+    cardTitle: 'Adicionar Chrome',
+    cardText: 'Versão mínima 62',
+    buttonText: 'Adicionar e instalar Chrome'
+  }"
+  ></app-download-cards>
+  <app-download-cards
+  [cardInfo]="{
+    imageSrc: '../../assets/images/logo-firefox.svg',
+    cardTitle: 'Adicionar Firefox',
+    cardText: 'Versão mínima 55',
+    buttonText: 'Adicionar e instalar Firefox'
+  }"
+  ></app-download-cards>
+  <app-download-cards
+  [cardInfo]="{
+    imageSrc: '../../assets/images/logo-opera.svg',
+    cardTitle: 'Adicionar Opera',
+    cardText: 'Versão mínima 46',
+    buttonText: 'Adicionar e instalar Opera'
+  }"
+  ></app-download-cards>
 </section>
