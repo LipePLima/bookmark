@@ -1,0 +1,22 @@
+.download__section {
+  padding: 0 2rem;
+
+  .download__title {
+    font-size: 24px;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+  }
+
+  .download__text {
+      margin: 1rem 0 2rem 0;
+
+      font-weight: 400;
+      color: hsl(229, 8%, 60%);
+      line-height: 1.4rem;
+  }
+}
+
+.download__cards {
+  padding: 0 2rem;
+}
+

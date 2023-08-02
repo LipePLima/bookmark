@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { ManagerComponent } from './manager/manager.component';
 import { FeaturesComponent } from './features/features.component';
 import { FeaturesItensComponent } from './features-itens/features-itens.component';
+import { DownloadComponent } from './download/download.component';
+import { DownloadCardsComponent } from './download-cards/download-cards.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,9 @@ import { FeaturesItensComponent } from './features-itens/features-itens.componen
     HeaderComponent,
     ManagerComponent,
     FeaturesComponent,
-    FeaturesItensComponent
+    FeaturesItensComponent,
+    DownloadComponent,
+    DownloadCardsComponent
   ],
   imports: [
     BrowserModule
