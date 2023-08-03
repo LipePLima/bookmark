@@ -8,6 +8,7 @@ import { FeaturesComponent } from './features/features.component';
 import { FeaturesItensComponent } from './features-itens/features-itens.component';
 import { DownloadComponent } from './download/download.component';
 import { DownloadCardsComponent } from './download-cards/download-cards.component';
+import { QuestionComponent } from './question/question.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DownloadCardsComponent } from './download-cards/download-cards.componen
     FeaturesComponent,
     FeaturesItensComponent,
     DownloadComponent,
-    DownloadCardsComponent
+    DownloadCardsComponent,
+    QuestionComponent
   ],
   imports: [
     BrowserModule

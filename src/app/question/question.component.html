@@ -1,0 +1,17 @@
+<section class="question__section">
+  <h2 class="question__title">Perguntas Frequentes</h2>
+  <p class="question__text">Aqui estão algumas de nossas perguntas frequentes. Se você tiver qualquer outra pergunta, por favor, sinta-se livre para nos enviar um e-mail</p>
+</section>
+<section class="question__questions-list">
+  <ul class="questions-list__list">
+    <li class="list__answer" *ngFor="let question of questions">
+      <div class="answer__question-content">
+        <p class="question-content__text">{{ question.title }}</p>
+        <img class="question-content__img" src="../../assets/images/icon-arrow.svg" alt="">
+      </div>
+      <div class="answer__content-answer">
+        <p class="content-answer__text">{{ question.answer }}</p>
+      </div>
+    </li>
+  </ul>
+</section>
