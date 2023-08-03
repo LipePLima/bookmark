@@ -10,6 +10,7 @@ export class DownloadCardsComponent {
     imageSrc: string;
     cardTitle: string;
     cardText: string;
+    cardLink: string;
     buttonText: string;
   } | undefined;
 }

@@ -3,5 +3,7 @@
   <h3 class="card__title">{{ cardInfo?.cardTitle }}</h3>
   <p class="card__text">{{ cardInfo?.cardText }}</p>
   <img class="card__dotted-line" src="../../assets/images/bg-dots.svg" alt="">
-  <button class="card__btn">{{ cardInfo?.buttonText }}</button>
+  <a href="{{ cardInfo?.cardLink }}" target="_blank">
+    <button class="card__btn">{{ cardInfo?.buttonText }}</button>
+  </a>
 </div>
