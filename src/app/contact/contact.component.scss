@@ -1,0 +1,30 @@
+.contact__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+  background-color: #242946;
+  color: #fff;
+  text-align: center;
+
+  .section__list {
+    margin: 2.8rem 0;
+
+    .list__link {
+      text-decoration: none;
+
+      .list__item {
+        color: #BFC5D3;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .section__social {
+    width: 24%;
+    display: flex;
+    justify-content: space-between;
+  }
+}

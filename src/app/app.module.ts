@@ -11,6 +11,7 @@ import { DownloadComponent } from './download/download.component';
 import { DownloadCardsComponent } from './download-cards/download-cards.component';
 import { QuestionComponent } from './question/question.component';
 import { EmailComponent } from './email/email.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +23,12 @@ import { EmailComponent } from './email/email.component';
     DownloadComponent,
     DownloadCardsComponent,
     QuestionComponent,
-    EmailComponent
+    EmailComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
