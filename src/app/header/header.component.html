@@ -1,6 +1,26 @@
-<header>
-     <img class="header__img" src="../../assets/images/logo-bookmark.svg" alt="">
-     <button class="header__btn">
-          <img class="btn__img" src="../../assets/images/icon-hamburger.svg" alt="">
-     </button>
+<header class="container__header">
+  <img class="header__img" src="{{ logo }}" alt="">
+  <button class="header__btn" (click)="openMenu()">
+    <img class="btn__img" src="{{ menu }}" alt="">
+  </button>
+  <div class="header__menu" [ngStyle]="{ 'display': isOpen ? 'flex' : 'none' }">
+    <ul class="menu__list">
+      <a href="#features" class="list__link">
+        <li class="list__item">Características</li>
+      </a>
+      <a href="" class="list__link">
+        <li class="list__item">Preços</li>
+      </a>
+      <a href="https://www.linkedin.com/in/felipepliima/" target="_blank" class="list__link">
+        <li class="list__item">Contato</li>
+      </a>
+      <a href="" class="list__link">
+        <li class="list__item">Login</li>
+      </a>
+    </ul>
+    <div class="menu__social">
+      <img class="social__img" src="../../assets/images/icon-facebook.svg" alt="Icone do Facebook">
+      <img class="social__img" src="../../assets/images/icon-twitter.svg" alt="Icone do Twitter">
+    </div>
+  </div>
 </header>
