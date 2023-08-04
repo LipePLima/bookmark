@@ -2,11 +2,25 @@
   <h2 class="features__title">Características</h2>
   <p class="features__text">Nosso objetivo é tornar mais rápido e fácil para você acessar seus sites favoritos. Sua sincronização de favoritos entre seus dispositivos para que você possa acessá-los em qualquer lugar.</p>
   <ul class="features__list">
-    <li class="list__item">Um simples bookmark</li>
-    <li class="list__item">Pesquisa rápida</li>
-    <li class="list__item last-item">Compartilhamento fácil</li>
+    <li class="list__item feature__item">
+      <p class="item__text" (click)="menuActive(0)" [ngStyle]="{ 'border-bottom': isClickedList[0] ? '5px solid hsl(0, 94%, 66%)' : 'none' }">Um simples bookmark
+      </p>
+    </li>
+    <li class="list__item feature__item">
+      <p class="item__text" (click)="menuActive(1)" [ngStyle]="{ 'border-bottom': isClickedList[1] ? '5px solid hsl(0, 94%, 66%)' : 'none' }">Pesquisa rápida
+      </p>
+    </li>
+    <li class="list__item feature__item last-item">
+      <p class="item__text" (click)="menuActive(2)" [ngStyle]="{ 'border-bottom': isClickedList[2] ? '5px solid hsl(0, 94%, 66%)' : 'none' }">Compartilhamento fácil</p>
+    </li>
   </ul>
 </section>
 <section class="features__content">
-  <app-features-itens></app-features-itens>
+  <app-features-itens
+    [itemInfo]="{
+      imageSrc: _img,
+      itemTitle: _title,
+      itemText: _text
+    }"
+  ></app-features-itens>
 </section>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-features-itens',
@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./features-itens.component.scss']
 })
 export class FeaturesItensComponent {
-
+  @Input() itemInfo: {
+    imageSrc: string;
+    itemTitle: string;
+    itemText: string;
+  } | undefined;
 }

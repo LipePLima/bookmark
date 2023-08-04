@@ -1,6 +1,6 @@
 .features__section {
   padding: 0 2rem;
-  
+
   .features__title {
     font-size: 24px;
     font-weight: 500;
@@ -26,6 +26,13 @@
 
       font-weight: 500;
       color: hsl(229, 5%, 45%);
+
+      .item__text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
     }
 
     .last-item {

@@ -1,8 +1,8 @@
 <div class="itens__image">
-  <img class="itens__img" src="../../assets/images/illustration-features-tab-1.svg" alt="">
+  <img class="itens__img" src="{{ itemInfo?.imageSrc }}" alt="">
   <div class="itens__bottom"></div>
 </div>
 <div class="itens__content">
-  <h2 class="content__title">Bookmark em um clique</h2>
-  <p class="content__text">Organize seu marcador como quiser. Nossa interface simples de arrastar e soltar oferece controle total sobre como você gerencia seus sites favoritos.</p>
+  <h2 class="content__title">{{ itemInfo?.itemTitle }}</h2>
+  <p class="content__text">{{ itemInfo?.itemText }}</p>
 </div>
