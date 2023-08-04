@@ -4,14 +4,17 @@
 </section>
 <section class="question__questions-list">
   <ul class="questions-list__list">
-    <li class="list__answer" *ngFor="let question of questions">
+    <li class="list__answer" *ngFor="let question of questions" ng-click="">
       <div class="answer__question-content">
         <p class="question-content__text">{{ question.title }}</p>
         <img class="question-content__img" src="../../assets/images/icon-arrow.svg" alt="">
       </div>
-      <div class="answer__content-answer">
+      <div class="answer__content-answer" >
         <p class="content-answer__text">{{ question.answer }}</p>
       </div>
     </li>
   </ul>
 </section>
+<div class="question__btn">
+  <button class="btn__button">Mais Informações</button>
+</div>

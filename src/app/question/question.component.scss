@@ -53,3 +53,19 @@
     }
   }
 }
+
+.question__btn {
+  margin: 3rem 0 6.625rem 0;
+
+  .btn__button {
+    font-size: 16px;
+    font-weight: 500;
+    width: 40%;
+    height: 42px;
+    background-color: #5366DE;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 18px 0px rgba(128, 128, 128, 0.1);
+  }
+}
