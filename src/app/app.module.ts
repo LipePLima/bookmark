@@ -9,6 +9,7 @@ import { FeaturesItensComponent } from './features-itens/features-itens.componen
 import { DownloadComponent } from './download/download.component';
 import { DownloadCardsComponent } from './download-cards/download-cards.component';
 import { QuestionComponent } from './question/question.component';
+import { EmailComponent } from './email/email.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { QuestionComponent } from './question/question.component';
     FeaturesItensComponent,
     DownloadComponent,
     DownloadCardsComponent,
-    QuestionComponent
+    QuestionComponent,
+    EmailComponent
   ],
   imports: [
     BrowserModule

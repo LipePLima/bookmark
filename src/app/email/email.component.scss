@@ -1,0 +1,44 @@
+.email__section {
+  text-align: center;
+  color: #fff;
+  background-color: #5266DF;
+  padding: 4rem 2rem 3.25rem 2rem;
+
+  .section__text {
+    color: #F2FCFE;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+  }
+
+  .section__title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .section__form {
+    display: flex;
+    flex-direction: column;
+
+    .form__input {
+      height: 42px;
+      padding-left: .5rem;
+      border-radius: 5px;
+      margin-bottom: .5rem;
+      border: none;
+      box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 18px 0px rgba(128, 128, 128, 0.1);
+    }
+
+    .form__btn {
+      font-size: 18px;
+      font-weight: 500;
+      height: 42px;
+      color: #FFF1EE;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 5px 14px 0px rgba(0, 0, 0, 0.2), inset 0px 0px 18px 0px rgba(128, 128, 128, 0.1);
+      background-color: hsl(0, 94%, 66%);
+    }
+  }
+}
