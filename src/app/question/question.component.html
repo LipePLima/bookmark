@@ -4,10 +4,14 @@
 </section>
 <section class="question__questions-list">
   <ul class="questions-list__list">
-    <li class="list__answer" *ngFor="let question of questions" ng-click="">
+    <li class="list__answer" *ngFor="let question of questions">
       <div class="answer__question-content" (click)="showAnswer(questions.indexOf(question))">
         <p class="question-content__text">{{ question.title }}</p>
-        <img class="question-content__img" src="../../assets/images/icon-arrow.svg" alt="">
+        <img class="question-content__img"
+            src="{{ getImageSrc(questions.indexOf(question)) }}"
+            [ngStyle]="{ 'transform': isClickedList[questions.indexOf(question)] ? 'rotate(180deg)' : 'rotate(0deg)' }"
+            alt=""
+        >
       </div>
       <div class="answer__content-answer" [ngStyle]="{ 'display': isClickedList[questions.indexOf(question)] ? 'block' : 'none' }">
         <p class="content-answer__text">{{ question.answer }}</p>

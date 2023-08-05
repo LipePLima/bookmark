@@ -37,4 +37,8 @@ export class QuestionComponent {
       this.previousIndex = index;
     }
   }
+
+  getImageSrc(index: number): string {
+    return this.isClickedList[index] ? '../../assets/images/icon-arrow-close.svg' : '../../assets/images/icon-arrow.svg';
+  }
 }
