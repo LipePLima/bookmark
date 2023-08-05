@@ -23,5 +23,18 @@ export class QuestionComponent {
       title: "E quanto a outros navegadores Chromium?",
       answer: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, ea eum incidunt totam perferendis labore unde quos sit deleniti, laboriosam nisi ratione perspiciatis ex quaerat, omnis nostrum sunt similique fugiat."
     }
-  ]
+  ];
+  public isClickedList: boolean[] = [false, false, false];
+  private previousIndex: number | null = null;
+
+  public showAnswer(index: number) {
+    if (this.previousIndex !== null && this.previousIndex === index) {
+      this.isClickedList[index] = false;
+      this.previousIndex = null;
+    } else {
+      this.isClickedList.fill(false);
+      this.isClickedList[index] = true;
+      this.previousIndex = index;
+    }
+  }
 }
