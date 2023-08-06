@@ -2,7 +2,8 @@
   <p class="section__text">35,000+ já aderiram</p>
   <h2 class="section__title">Mantenha-se atualizado com o que estamos fazendo</h2>
   <form [formGroup]="_form" class="section__form">
-    <input type="email" formControlName="email" id="email" class="form__input">
+    <input type="email" formControlName="email" id="email" class="form__input" [ngClass]="{ 'form__input-margin': !_toggle }">
+    <div [hidden]="_toggle" class="form__alert">Verifique se realmente é um email</div>
     <button type="submit" class="form__btn" (click)="compareEmailWithRegex()">Contate-nos</button>
   </form>
 </section>

@@ -8,6 +8,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class EmailComponent {
   public _form: FormGroup;
+  public _toggle: boolean = true;
 
   constructor(private formBuilder: FormBuilder) {
     this._form = this.formBuilder.group({
@@ -18,9 +19,9 @@ export class EmailComponent {
   public compareEmailWithRegex() {
     console.log(this._form.value.email)
     if (this._form.valid) {
-      console.log("email válido")
+      this._toggle = true;
     } else {
-      console.log("Email inválido")
+      this._toggle = false;
     }
   }
 }
