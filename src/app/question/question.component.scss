@@ -1,3 +1,14 @@
+@keyframes dropText {
+  0% {
+    transform: perspective();
+    height: 0;
+  }
+
+  100% {
+    height: auto;
+  }
+}
+
 .question__section {
   padding: 0 2rem;
 
@@ -47,10 +58,21 @@
       }
 
       .answer__content-answer {
-        display: none;
+        overflow: hidden;
         margin-bottom: 2rem;
         text-align: left;
         color: hsl(229, 8%, 60%);
+
+        transition: height .5s ease;
+
+        .content-answer__text {
+          opacity: 0;
+          transition: opacity 1s ease;
+        }
+
+        .show-text {
+          opacity: 1;
+        }
       }
     }
   }

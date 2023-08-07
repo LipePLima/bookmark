@@ -13,8 +13,17 @@
             alt=""
         >
       </div>
-      <div class="answer__content-answer" [ngStyle]="{ 'display': isClickedList[questions.indexOf(question)] ? 'block' : 'none' }">
-        <p class="content-answer__text">{{ question.answer }}</p>
+      <div class="answer__content-answer"
+        [ngStyle]="{
+          'height': isClickedList[questions.indexOf(question)] ? 'auto' : '0',
+          'margin-bottom': isClickedList[questions.indexOf(question)] ? '2rem' : '0'
+        }"
+      >
+        <p class="content-answer__text"
+          [ngClass]="{'show-text': isClickedList[questions.indexOf(question)]}"
+        >
+          {{ question.answer }}
+        </p>
       </div>
     </li>
   </ul>
