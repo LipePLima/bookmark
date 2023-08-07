@@ -17,6 +17,8 @@
 </section>
 <section class="features__content">
   <app-features-itens
+    class="content__animation-element"
+    [ngClass]="{ 'animationFeatureIn': isAnimationActive }"
     [itemInfo]="{
       imageSrc: _img,
       itemTitle: _title,

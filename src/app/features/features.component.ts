@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class FeaturesComponent {
   public isClickedList: boolean[] = [true, false, false];
+  public currentItemIndex: number = 0;
+  public isAnimationActive: boolean = false;
   public contentList = [
     {
       img: "../../assets/images/illustration-features-tab-1.svg",
@@ -30,11 +32,18 @@ export class FeaturesComponent {
   public _text: string  = this.contentList[0].text;
 
   public menuActive(index: number) {
+    this.currentItemIndex = index;
     this.isClickedList.fill(false);
 
     this.isClickedList[index] = true;
     this._img   = this.contentList[index].img;
     this._title = this.contentList[index].title;
     this._text  = this.contentList[index].text;
+
+    this.isAnimationActive = true;
+
+    setTimeout(() => {
+      this.isAnimationActive = false;
+    }, 500);
   }
 }

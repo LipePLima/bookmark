@@ -1,3 +1,13 @@
+@keyframes animationFeatureOut {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
 .features__section {
   padding: 0 2rem;
 
@@ -43,6 +53,13 @@
 
 .features__content {
   margin: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .animationFeatureIn {
+    position: relative;
+    overflow: hidden;
+    animation: animationFeatureOut .5s;
+  }
 }
-
-
