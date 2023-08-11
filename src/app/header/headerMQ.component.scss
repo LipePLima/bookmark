@@ -19,10 +19,48 @@
         width: 100%;
 
         .list__link {
-          color: #000;
+          color: #3A3B40;
           font-size: 18px;
+
+          .list__item {
+            border: none;
+          }
         }
       }
+
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container__header {
+    padding: 3rem 4.5rem;
+
+    .header__menu {
+      width: 50%;
+
+      .menu__list {
+        align-items: center;
+
+        .list__link {
+          .list__item {
+            padding: 0;
+          }
+        }
+
+        .link__login {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 112px;
+          height: 40px;
+
+          border-radius: 6px;
+          background-color: #FB5859;
+          color: #FFE6E3;
+        }
+      }
+
 
     }
   }
