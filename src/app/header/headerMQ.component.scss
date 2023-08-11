@@ -48,6 +48,10 @@
           }
         }
 
+        .list__link:hover {
+          color: #C67073;
+        }
+
         .link__login {
           display: flex;
           justify-content: center;
@@ -56,12 +60,16 @@
           height: 40px;
 
           border-radius: 6px;
-          background-color: #FB5859;
+          background-color: #DD6565;
           color: #FFE6E3;
         }
+
+        .link__login:hover {
+          background-color: transparent;
+          border: 2px solid #DD6565;
+          color: #DD6565;
+        }
       }
-
-
     }
   }
 }
