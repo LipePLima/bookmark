@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px) {
+  .container__header {
+    .header__menu {
+      display: initial;
+      padding-top: 0;
+      position: initial;
+      width: 66%;
+      height: auto;
+      top: 0;
+      left: 0;
+      background-color: transparent;
+      z-index: 4;
+      opacity: 0.96;
+
+      .menu__list {
+        display: flex;
+        justify-content: space-between;
+
+        width: 100%;
+
+        .list__link {
+          color: #000;
+          font-size: 18px;
+        }
+      }
+
+    }
+  }
+}

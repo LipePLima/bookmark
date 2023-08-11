@@ -1,6 +1,6 @@
 <header class="container__header">
   <img class="header__img" src="{{ logo }}" alt="">
-  <button class="header__btn" (click)="openMenu()">
+  <button class="header__btn" (click)="openMenu()" [ngStyle]="{ 'display': isOpen ? 'none' : 'initial' }">
     <img class="btn__img" src="{{ menu }}" alt="">
   </button>
   <div class="header__menu" [ngStyle]="{ 'display': isOpen ? 'flex' : 'none' }">
@@ -18,7 +18,7 @@
         <li class="list__item">Login</li>
       </a>
     </ul>
-    <div class="menu__social">
+    <div class="menu__social" [ngStyle]="{ 'display': isOpen ? 'none' : 'initial' }">
       <img class="social__img" src="../../assets/images/icon-facebook.svg" alt="Icone do Facebook">
       <img class="social__img" src="../../assets/images/icon-twitter.svg" alt="Icone do Twitter">
     </div>
