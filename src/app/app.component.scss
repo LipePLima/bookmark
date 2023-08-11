@@ -10,3 +10,12 @@ main {
     text-align: center;
   }
 }
+
+@media screen and (min-width: 1200px){
+  main {
+    app-manager {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}

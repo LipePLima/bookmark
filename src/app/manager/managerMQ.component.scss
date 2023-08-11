@@ -1,0 +1,52 @@
+@media screen and (min-width: 1200px) {
+  .manager__imgs {
+    width: 60%;
+
+    .imgs__img {
+      width: 90%;
+    }
+
+    .imgs__bottom {
+      top: 118px;
+      height: 75%;
+      width: 68%;
+      border-bottom-left-radius: 140px;
+    }
+  }
+
+  .manager__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    text-align: left;
+    margin: 0 0 0 4rem;
+    padding: 0;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    .text__btns {
+      .btn__chrome, .btn__firefox {
+        transition: .2s linear;
+      }
+
+      .btn__chrome:hover {
+        width: 136px;
+        height: 46px;
+        background-color: transparent;
+        color: #5C64AF;
+        border: 2px solid #5C64AF;
+      }
+
+      .btn__firefox:hover {
+        width: 136px;
+        height: 46px;
+        background-color: transparent;
+        color: #5E5E6A;
+        border: 2px solid #5E5E6A;
+      }
+    }
+  }
+}
