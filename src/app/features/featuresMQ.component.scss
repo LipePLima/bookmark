@@ -1,0 +1,32 @@
+@media screen and (min-width: 1200px) {
+  .features__section {
+    padding: 0 20%;
+
+    .features__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border-bottom: 1px solid #E0E0EA;
+
+      .feature__item {
+        cursor: pointer;
+        width: calc(100% / 3);
+        border-top: 0;
+
+        .item__text {
+          width: 100%;
+        }
+
+      }
+
+      .last-item {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  app-features-itens {
+    width: 100%;
+  }
+
+}

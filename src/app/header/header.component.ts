@@ -16,7 +16,7 @@ export class HeaderComponent {
     window.addEventListener('resize', this.updateIsOpenBasedOnScreenWidth.bind(this));
   }
 
-  private updateIsOpenBasedOnScreenWidth() {
+  public updateIsOpenBasedOnScreenWidth() {
     const newIsOpen = window.innerWidth >= 768;
 
     if (this.isOpen !== newIsOpen) {
